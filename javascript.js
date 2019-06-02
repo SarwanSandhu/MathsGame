@@ -58,7 +58,8 @@ document.getElementById("box"+ i).onclick=function(){
             
             //Generate new Q&A
             
-            generateQA();
+         setTimeout(function(){generateQA()}, 1000);
+
         }else{
             //wrong answer
             hide("correct");
